@@ -17,7 +17,7 @@ jobs:
       - name: Stockfish yasash
         run: |
           git clone https://github.com/official-stockfish/Stockfish.git sf
-          cd sf && git checkout ff7cee4244ec96ea488c402669e3674c0574dce6
+          cd sf && git checkout sf_16.1
           NDK="${ANDROID_NDK_HOME:-$ANDROID_NDK_LATEST_HOME}"
           export PATH="$NDK/toolchains/llvm/prebuilt/linux-x86_64/bin:$PATH"
           cd src
