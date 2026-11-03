@@ -2,7 +2,7 @@ name: Shaxmat APK
 on:
   workflow_dispatch:
   push:
-    paths: ["shashka_android.zip"]
+    paths: ["shaxmat_android.zip"]
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -13,7 +13,7 @@ jobs:
           distribution: temurin
           java-version: "17"
       - name: ZIP ni ochish
-        run: unzip -q shashka_android.zip -d proj
+        run: unzip -q shaxmat_android.zip -d proj
       - name: Stockfish yasash
         run: |
           git clone https://github.com/official-stockfish/Stockfish.git sf
